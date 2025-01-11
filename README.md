@@ -1,8 +1,12 @@
 ### About
 PS3XploitPlus is basically just a more modern version of the original site. It also has some extra content included.
 
+<br>  
+
 ### What's available
-Pretty much everything that's on the original website but with added content (firmwares, homebrew, etc).
+Pretty much everything that's on the original website but with added content (firmwares, homebrew, etc). When the site has everything that the original does, and it's usable / partially complete, I MIGHT add games, DLC and mods.
+
+<br>  
 
 ### Credit
 Credit goes to the PS3Xploit Team for the original site and any original content hosted on this version. Credit for the redesign goes to Myself.
