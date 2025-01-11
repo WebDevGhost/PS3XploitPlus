@@ -24,7 +24,7 @@ button, input, textarea, select, a, img {
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+    background: #2a003f;
 }
 
 ::-webkit-scrollbar-thumb {
