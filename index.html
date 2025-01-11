@@ -34,7 +34,7 @@
             padding: 15px;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             position: relative;
@@ -46,22 +46,22 @@
             font-size: 1.2em;
             font-weight: bold;
             color: #fff;
-            margin-right: auto;
         }
 
         .navbar .nav-buttons {
             display: flex;
-            justify-content: space-around;
-            width: 80%;
+            justify-content: flex-end;
+            gap: 5px;
         }
 
         .navbar .nav-buttons button {
             background-color: #322659;
             color: #fff;
             border: 2px solid #4a4a8e;
-            padding: 8px 15px;
-            border-radius: 10px;
+            padding: 6px 12px;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 0.85em;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
 
@@ -79,15 +79,15 @@
             display: none;
             position: absolute;
             background-color: #1e1e1e;
-            border-radius: 10px;
-            font-size: 0.9em;
-            min-width: 200px;
+            border-radius: 8px;
+            font-size: 0.8em;
+            min-width: 170px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            top: 55px;
+            top: 50px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 1;
-            padding: 10px 0;
+            padding: 4px 0;
         }
 
         .dropdown.open .dropdown-content {
@@ -96,28 +96,70 @@
 
         .dropdown-content a {
             color: #fff;
-            padding: 12px 16px;
+            padding: 6px 14px;
             text-decoration: none;
             display: block;
-            border-radius: 10px;
-            font-size: 1em;
+            border-radius: 8px;
         }
 
         .dropdown-content a:hover {
             background-color: #4a4a8e;
+        }
+
+        .content-body {
+            width: 93%;
+            background-color: #1e1e1e;
+            margin: 40px auto 0;
+            padding: 30px;
             border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
         }
 
-        .dropdown-content a:last-child {
-            border-bottom: none;
+        .content-body img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
-        .dropdown.right-aligned .dropdown-content {
-            left: auto;
-            right: -30px;
-            transform: none;
+        .content-body h4 {
+            color: #fff;
+            margin-bottom: -15px;
         }
 
+        .content-body p {
+            color: #ccc;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content-body .section {
+            width: 80%;
+            margin: 10px 0;
+        }
+
+        .content-body .section a {
+            color: #4a4a8e;
+            text-decoration: none;
+        }
+
+        .content-body .section a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            color: #ccc;
+            padding: 20px 0;
+            position: fixed;
+            bottom: -15px;
+            background-color: #141414;
+        }
     </style>
 </head>
 <body>
@@ -150,9 +192,16 @@
             <div class="dropdown">
                 <button onclick="toggleDropdown(event)">HAN V3 Tools</button>
                 <div class="dropdown-content">
-                    <a href="#">Option</a>
-                    <a href="#">Option</a>
-                    <a href="#">Option</a>
+                    <a href="#">Extra Tools</a>
+                    <a href="#">ACT/IDPS Dumper</a>
+                    <a href="#">ACT/RIF Copier</a>
+                    <a href="#">HAN Installer</a>
+                    <a href="#">HAN Enabler</a>
+                    <a href="#">Debug PKG Enabler</a>
+                    <a href="#">Download Support Files</a>
+                    <a href="#">Download Release Files</a>
+                    <a href="#">Ethanol Resigner Tool</a>
+                    <a href="#">Hybrid Firmware</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -174,9 +223,9 @@
             <div class="dropdown">
                 <button onclick="toggleDropdown(event)">Other Tools</button>
                 <div class="dropdown-content">
-                    <a href="#">Option</a>
-                    <a href="#">Option</a>
-                    <a href="#">Option</a>
+                    <a href="#">Beep Test</a>
+                    <a href="#">LED Status Test</a>
+                    <a href="#">WebKit ROP Tutorials</a>
                 </div>
             </div>
             <div class="dropdown">
@@ -197,22 +246,45 @@
                 <button onclick="toggleDropdown(event)">Links</button>
                 <div class="dropdown-content">
                     <a href="#">PSXPlace</a>
-                    <a href="#">Social Media</a>
+                    <a href="#">Social Media Account</a>
                 </div>
             </div>
-            <div class="dropdown right-aligned">
+            <div class="dropdown">
                 <button onclick="toggleDropdown(event)">Help</button>
                 <div class="dropdown-content">
-                    <a href="#">Option 1</a>
-                    <a href="#">Option 2</a>
-                    <a href="#">Option 3</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Changelog</a>
+                    <a href="#">Using Dumpers</a>
+                    <a href="#">Using Writer</a>
+                    <a href="#">Using HAN V3</a>
+                    <a href="#">Using V3 Tools</a>
+                    <a href="#">Using StoreHaxx</a>
+                    <a href="#">Using HEN</a>
+                    <a href="#">Using BG Toolset</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <script>
+    <div class="content-body">
+        <img src="#" alt="Logo">
 
+        <div class="section">
+            <p>This section will be updated soon!<br><a href="#">Link</a></p>
+        </div>
+        <div class="section">
+            <p>This section will be updated soon!<br><a href="#">Link</a></p>
+        </div>
+        <div class="section">
+            <p>This section will be updated soon!<br><a href="#">Link</a></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>PS3Xploit Plus, by WebDevGhost</p>
+    </div>
+
+    <script>
         function toggleDropdown(event) {
             const dropdown = event.target.closest('.dropdown');
             dropdown.classList.toggle('open');
