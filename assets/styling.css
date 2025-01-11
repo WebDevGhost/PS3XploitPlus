@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background: #141414;
+    background: linear-gradient(135deg, #141414 30%, #2a003f 100%);
     color: #fff;
     overflow-x: hidden;
 }
@@ -28,14 +28,14 @@ button, input, textarea, select, a, img {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #fff;
+    background-color: #322659;
     border-radius: 10px;
     border: 2px solid transparent;
     background-clip: content-box;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #ddd;
+    background-color: #4a4a8e;
 }
 
 button {

@@ -111,12 +111,13 @@
             background-color: #1e1e1e;
             margin: 40px auto 0;
             padding: 30px;
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: flex-start;
+            overflow: hidden;
         }
 
         .content-body img {
@@ -153,16 +154,64 @@
 
         .footer {
             width: 100%;
+            height: 8px;
             text-align: center;
             color: #ccc;
             padding: 20px 0;
             position: fixed;
-            bottom: -15px;
-            background-color: #141414;
+            bottom: 15px;
+        }
+        
+        .popup {
+            display: none;
+            position: fixed;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #2a2a2a;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 400px;
+            padding: 20px;
+            z-index: 9999;
+        }
+
+        .popup h4 {
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+
+        .popup p {
+            color: white;
+            text-align: center;
+        }
+
+        .popup .close-btn {
+            display: block;
+            width: 80%;
+            margin: 20px auto 0;
+            padding: 10px;
+            background-color: #322659;
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .popup .close-btn:hover {
+            background-color: #4a4a8e;
         }
     </style>
 </head>
 <body>
+    
+    <div class="popup" id="customPopup">
+        <h4>Welcome</h4>
+        <p>Please note that this isn't the official PS3Xploit site, just a redesign!</p>
+        <button class="close-btn" onclick="closePopup()">Understood</button>
+    </div>
 
     <nav class="navbar">
         <div class="logo">PS3XploitPlus</div>
@@ -270,21 +319,57 @@
         <img src="#" alt="Logo">
 
         <div class="section">
-            <p>This section will be updated soon!<br><a href="#">Link</a></p>
+            <p>Recommended Firmware:<br>CFW-Compatible: 4.91 OFW / PS3HEN: 4.91 HFW<br><a href="https://www.ps3toolset.com/">bguerville's PS3 Toolset (Supports Firmware 4.75 - 4.91)</a></p>
         </div>
+        <br>
         <div class="section">
-            <p>This section will be updated soon!<br><a href="#">Link</a></p>
+            <p>WARNING:<br>** DO NOT ENABLE FSM (Factory Service Mode) WITH PS3HEN! **<br>** DO NOT INSTALL CCAPI WITH PS3HEN! **<br><a href="https://ps3xploit.me/firmware/hfw/HFW_4.91.1_PS3UPDAT.PUP">4.91.1 HFW (Hybrid Firmware) (thanks Joonie)</a><br><a href="https://www.psx-place.com/threads/support-thread-ps3hen-bugs-problems-and-other-issues.37327/">Please click here to report problems with PS3HEN</a><br><a href="https://www.psx-place.com/threads/ps3hen-v2-0-0-official-update-new-features-include-ps3iso-support-kernel-plugins-a-ps3hen-faq.23955/">PS3HEN v3 Official Thread</a></p>
         </div>
+        <br>
         <div class="section">
-            <p>This section will be updated soon!<br><a href="#">Link</a></p>
+            <p>If anyone would like to support the PS3Xploit Team, to help with server costs, and to further progress<br>research & development, please see link below.<br><br>Thank You To All!<br><a href="https://www.paypal.me/nopsn">https://www.paypal.me/nopsn</a></p>
+        </div>
+        <br>
+        <div class="section">
+            <p>Many thanks to xerpi for porting the memory leak exploit to ps3,<br>
+               zecoxao & Joonie for their early & renewed support,<br>
+               mysis for documenting vsh/lv2,<br>
+               kakaroto for the PS3 IDA tools, naherwert for scetool,<br>
+               Rebug Team for producing/updating the only CFW adequate to develop this work,<br>
+               Cobra team for sharing their CobraUSB source,<br>
+               the psdevwiki team of course,<br>
+               STLcardsWS for his long standing contribution & ever constant support.<br>
+               We also wish to thank all the ps3 community hackers/devs,<br>
+               past & present,who directly or indirectly helped us put this project together, you know who you are...</p>
+        </div>
+        <br>
+        <div class="section">
+            <p>Other links:<br><br><a href="http://www.psx-place.com/forums/PS3Xploit/">http://www.psx-place.com/forums/PS3Xploit/</a><br><a href="https://gab.com/PS3Xploit">Social media</a></p>
         </div>
     </div>
+    
+    <br>
+     <br>
+    <br>
 
     <div class="footer">
         <p>PS3Xploit Plus, by WebDevGhost</p>
     </div>
 
     <script>
+        
+        function showPopup() {
+            document.getElementById("customPopup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("customPopup").style.display = "none";
+        }
+
+        window.onload = function() {
+            showPopup();
+        }
+        
         function toggleDropdown(event) {
             const dropdown = event.target.closest('.dropdown');
             dropdown.classList.toggle('open');
