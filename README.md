@@ -15,5 +15,5 @@ Credit goes to the PS3Xploit Team for the original site and any original content
 
 ### Screenshots
 ![image](https://github.com/user-attachments/assets/5bad2156-7d89-4b94-bafb-d5e60bbd8d81)  
-![image](https://github.com/user-attachments/assets/039804f0-48c6-4c5d-9ffe-7fda98abc41c)
-
+![image](https://github.com/user-attachments/assets/039804f0-48c6-4c5d-9ffe-7fda98abc41c)  
+![image](https://github.com/user-attachments/assets/9e27212d-5f6a-46c3-a255-e075867309f8)  
