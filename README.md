@@ -16,9 +16,8 @@ Once the site is in a stable and usable state, I MIGHT add more content such as 
 <br>  
 
 ### To-Do
-- Change hyperlinks to buttons.
-- Match headers. text and colours to the official sites design.
-- Link assets/files to the dropdown options in the navigation bar.
+- [NOT SURE YET] Change hyperlinks to buttons.
+- [IN PROGRESS] Link assets/files to the dropdown options in the navigation bar.
 - Add responsive styling
 
 <br>  
