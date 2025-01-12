@@ -16,7 +16,6 @@ Once the site is in a stable and usable state, I MIGHT add more content such as 
 <br>  
 
 ### To-Do
-- Implement code that saves popup preference via cookies (won't show the popup again unless browser data is cleared).
 - Change hyperlinks to buttons.
 - Match headers. text and colours to the official sites design.
 - Link assets/files to the dropdown options in the navigation bar.
