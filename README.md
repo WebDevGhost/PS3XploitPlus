@@ -1,23 +1,31 @@
 ### About
-PS3XploitPlus is basically just a more modern version of the original site. It also has some extra content included.
+PS3XploitPlus is basically just a more modern version of the original site. It also has some extra content included. The goal of this version is to build it up bit by bit and add as much as possible.
 
 <br>  
 
 ### What's available
-Pretty much everything that's on the original website but with added content (firmwares, homebrew, etc). When the site has everything that the original does, and it's usable / partially complete, I MIGHT add games, DLC and mods.
+- HAN content
+- HEN content
+- Tools
+- Firmwares
+- Homebrew
+  + More!
 
-<br>  
-
-### Credit
-Credit goes to the PS3Xploit Team for the original site and any original content hosted on this version. Credit for the redesign goes to Myself.
+Once the site is in a stable and usable state, I MIGHT add more content such as games, DLC, mods, etc.
 
 <br>  
 
 ### To-Do
 - Implement code that saves popup preference via cookies (won't show the popup again unless browser data is cleared).
 - Change hyperlinks to buttons.
-- Match headers and text to the official sites design.
+- Match headers. text and colours to the official sites design.
 - Link assets/files to the dropdown options in the navigation bar.
+- Add responsive styling
+
+<br>  
+
+### Credit
+Credit goes to the PS3Xploit Team for the original site and any original content hosted on this version. Credit for the redesign goes to Myself.
 
 <br>  
 
